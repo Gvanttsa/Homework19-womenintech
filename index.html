@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="section">
+        <form action="#">
+            <div class="wrapper">
+                <label for="myname">First Name</label>
+                <input type="text" name="yourname" id="myname" placeholder="Enter Your Name">
+            </div>
+
+            <div class="wrapper">
+                <label for="myname">Last Name</label>
+                <input type="text" name="yourlastname" id="mylastname" placeholder="Enter Your Last Name">
+            </div>
+
+            <div class="wrapper"> 
+                <label for="myemail">Email</label>
+                <input type="email" placeholder="Enter Your Email" id="myemail">
+            </div>
+
+            <div class="wrapper">
+                <label for="passw">Password</label>
+                <input type="password" name="password" id="passw" placeholder="Enter Your Password">
+            </div>
+
+            <div class="wrapper">
+                <label for="passw2"> Repeat Password</label>
+                <input type="password" name="password2" id="passw2" placeholder="Repeat Your Password">
+            </div>
+
+            <div>
+                <div>
+                    <input type="radio" name="age" id="age1">
+                    <label for="age"> 18-35</label>
+                </div>
+
+                <div class="radio-middle">
+                    <input type="radio" name="age" id="age2">
+                    <label for="age2"> 36-50</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="age" id="age3">
+                    <label for="age3"> 51-65</label>
+                </div>
+            </div>
+
+            
+         <div class="send">
+            <button type="submit" class="button">Send</button>
+         </div>
+        </form>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

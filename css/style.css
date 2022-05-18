@@ -1,0 +1,32 @@
+.section {
+    background-color: white;
+    width: 500px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 2%;
+    padding-top: 25px;
+    box-shadow: 5px 10px 5px gray;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.radio-middle {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.button {
+    margin-top: 100px;
+    width: 100px;
+    height: 50px;
+    background-color: grey;
+    border-radius: 5%;
+    border-style: none;
+
+}
+.send {
+    display: flex;
+    justify-content: center;
+}
