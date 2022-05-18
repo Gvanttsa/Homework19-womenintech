@@ -5,37 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <section class="section">
-        <form action="#">
+        <form action="#" method="POST" id="registration">
             <div class="wrapper">
                 <label for="myname">First Name</label>
-                <input type="text" name="yourname" id="myname" placeholder="Enter Your Name">
+                <input type="text" name="yourname" id="myname" placeholder="Enter Your Name" class="input">
+                <span class="error-text" id="error_yourname"></span>
             </div>
 
             <div class="wrapper">
                 <label for="myname">Last Name</label>
-                <input type="text" name="yourlastname" id="mylastname" placeholder="Enter Your Last Name">
-            </div>
-
-            <div class="wrapper"> 
-                <label for="myemail">Email</label>
-                <input type="email" placeholder="Enter Your Email" id="myemail">
+                <input type="text" name="yourlastname" id="mylastname" placeholder="Enter Your Last Name" class="input">
+                <span class="error-text" id="error_yourlastname"></span>
             </div>
 
             <div class="wrapper">
                 <label for="passw">Password</label>
-                <input type="password" name="password" id="passw" placeholder="Enter Your Password">
+                <input type="password" name="password" id="passw" placeholder="Enter Your Password" class="input">
+                <span class="error-text" id="error_password"></span>
+
             </div>
 
             <div class="wrapper">
-                <label for="passw2"> Repeat Password</label>
-                <input type="password" name="password2" id="passw2" placeholder="Repeat Your Password">
+                <div class="icon-div">
+                    <label for="passw2"> Repeat Password</label>
+                    <input type="password" name="password2" id="passw2" placeholder="Repeat Your Password" class="input">
+                    <i class="fa-solid fa-eye" id="toggleIcon"></i>
+                    <span class="error-text" id="error_password2"></span>
+                </div>
+
             </div>
 
             <div>
+                <h3>Select Your Age</h3>
                 <div>
                     <input type="radio" name="age" id="age1">
                     <label for="age"> 18-35</label>
@@ -49,6 +55,7 @@
                 <div>
                     <input type="radio" name="age" id="age3">
                     <label for="age3"> 51-65</label>
+                    <span class="error-text" id="error_age"></span>
                 </div>
             </div>
 

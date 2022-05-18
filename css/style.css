@@ -1,7 +1,8 @@
 .section {
-    background-color: white;
-    width: 500px;
+    background-color: #ffffff;
+    /* width: 500px; */
     height: 600px;
+    max-width: 500px;
     margin: 0 auto;
     margin-top: 50px;
     border-radius: 2%;
@@ -11,7 +12,8 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    width: 300px;
 }
 .radio-middle {
     margin-top: 15px;
@@ -30,3 +32,14 @@
     display: flex;
     justify-content: center;
 }
+.error-text {
+    display: block;
+    font-style: italic;
+    color: red;
+}
+
+.input {
+    width: 200px;
+}
+
+
