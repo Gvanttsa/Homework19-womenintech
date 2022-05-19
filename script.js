@@ -8,14 +8,14 @@ document.getElementById('registration').addEventListener('submit', function(even
     let username = document.getElementById('myname').value;
 
     if (username.length < 4 || username == "") {
-        errors.username = "User Name Can Not Be Empty and Must Be More Than 4 Characters";
+        errors.yourname = "User Name Can Not Be Empty and Must Be More Than 4 Characters";
     }
 
     //userLastname
     let userLastName = document.getElementById('mylastname').value;
 
     if (userLastName.length < 4 || userLastName == "") {
-        errors.userLastName = "User Last Name Can Not Be Empty and Must Be More Than 4 Characters";
+        errors.yourlastname = "User Last Name Can Not Be Empty and Must Be More Than 4 Characters";
     }
     //password
     let password = document.getElementById('passw').value;
